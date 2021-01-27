@@ -10,13 +10,13 @@
     */
 
     # put your name here
-    define( 'OWNER_NAME', 'Your name' );
+    define( 'OWNER_NAME', 'Zubeir' );
 
     # put your email address here
-    define( 'OWNER_EMAIL', 'your-email@example.com' );
+    define( 'OWNER_EMAIL', 'zubeir.mohamed@outlook.de' );
 
     # put your do-not-reply email address here
-    define( 'DO_NOT_REPLY_EMAIL', 'no-reply@example.com' );
+    define( 'DO_NOT_REPLY_EMAIL', 'zubeirtech@gmail.com' );
 
    /**
     *
