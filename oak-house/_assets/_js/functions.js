@@ -947,7 +947,6 @@ $(document).ready(function () {
      */
 
     $.martanianOakHouseConfigureGoogleMaps = function () {
-        console.log("cc");
         var mapID = 1;
         $(".location-details-map").each(function () {
             var mapBox = $(this);
@@ -1205,12 +1204,15 @@ $(document).ready(function () {
         if (isError == false) {
             var thanksLay = form.children(".thanks-lay");
             thanksLay.fadeIn(300);
+            console.log(fields);
+            console.log(formOptions);
 
             $.ajax({
                 url: "_assets/_php/submit.php",
                 data: { fields: fields, options: formOptions },
                 type: "post",
                 success: function (output) {
+                    console.log(output);
                     var layClass =
                         output == "OK"
                             ? ".thanks-lay-content-sent"
@@ -1222,6 +1224,7 @@ $(document).ready(function () {
                     thanksLay.find(layClass).fadeIn(300);
                 },
                 error: function (output) {
+                    console.log(output);
                     thanksLay
                         .find(".thanks-lay-content-sending")
                         .css({ display: "none" });
