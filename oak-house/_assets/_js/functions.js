@@ -1546,51 +1546,46 @@ $(document).ready(function () {
      */
 
     $.martanianOakHouseConfigureImagesForMagnificPopup = function () {
-        $(".images").each(function () {
-            var images = $(this);
-            if (images.parents(".widget").length == 0) {
-                images.find(".image").each(function () {
-                    var image = $(this);
-                    var imageURL = $.martanianOakHouseGetImageURL(
-                        image.css("background-image")
-                    );
-
-                    image
-                        .data("mfp-src", imageURL)
-                        .attr("data-mfp-src", imageURL);
-                    image.html(
-                        '<div class="image-caption"><div class="image-caption-icon"><i class="fa fa-expand"></i></div></div>'
-                    );
-                });
-
-                images.magnificPopup({
-                    delegate: ".image",
-                    type: "image",
-                    gallery: { enabled: true },
-                });
-            }
-        });
-
-        $("section.gallery").each(function () {
-            var gallery = $(this);
-            gallery.find(".isotope-grid-item").each(function () {
-                var image = $(this);
-                var imageURL = $.martanianOakHouseGetImageURL(
-                    image.css("background-image")
-                );
-
-                image.data("mfp-src", imageURL).attr("data-mfp-src", imageURL);
-                image.html(
-                    '<div class="image-caption"><div class="image-caption-icon"><i class="fa fa-expand"></i></div></div>'
-                );
-            });
-
-            gallery.magnificPopup({
-                delegate: ".isotope-grid-item",
-                type: "image",
-                gallery: { enabled: true },
-            });
-        });
+        // $(".images").each(function () {
+        //     var images = $(this);
+        //     if (images.parents(".widget").length == 0) {
+        //         images.find(".image").each(function () {
+        //             var image = $(this);
+        //             var imageURL = $.martanianOakHouseGetImageURL(
+        //                 image.css("background-image")
+        //             );
+        //             image
+        //                 .data("mfp-src", imageURL)
+        //                 .attr("data-mfp-src", imageURL);
+        //             image.html(
+        //                 '<div class="image-caption"><div class="image-caption-icon"><i class="fa fa-expand"></i></div></div>'
+        //             );
+        //         });
+        //         images.magnificPopup({
+        //             delegate: ".image",
+        //             type: "image",
+        //             gallery: { enabled: true },
+        //         });
+        //     }
+        // });
+        // $("section.gallery").each(function () {
+        //     var gallery = $(this);
+        //     gallery.find(".isotope-grid-item").each(function () {
+        //         var image = $(this);
+        //         var imageURL = $.martanianOakHouseGetImageURL(
+        //             image.css("background-image")
+        //         );
+        //         image.data("mfp-src", imageURL).attr("data-mfp-src", imageURL);
+        //         image.html(
+        //             '<div class="image-caption"><div class="image-caption-icon"><i class="fa fa-expand"></i></div></div>'
+        //         );
+        //     });
+        //     gallery.magnificPopup({
+        //         delegate: ".isotope-grid-item",
+        //         type: "image",
+        //         gallery: { enabled: true },
+        //     });
+        // });
     };
 
     /**

@@ -1204,13 +1204,13 @@ form .thanks-lay .thanks-lay-content .thanks-lay-content-not-sent {
     margin: 0 !important;
 }
 
-*:hover > .image-caption {
+/* *:hover > .image-caption {
     opacity: 1;
 }
 
 *:hover > .image-caption .image-caption-icon {
     top: 50%;
-}
+} */
 
 /**
  *
