@@ -1185,21 +1185,21 @@ $(document).ready(function () {
     $("body").on("click touchstart", ".form-send", function (event) {
         event.preventDefault();
 
-        var form = $(this).parents("form.form-active");
-        var fields = [];
+        // var form = $(this).parents("form.form-active");
+        // var fields = [];
         var isError = false;
-        var formOptions = {
-            "client-name-field": form.data("client-name-field"),
-            "client-email-field": form.data("client-email-field"),
-            title: form.data("title"),
-        };
+        // var formOptions = {
+        //     "client-name-field": form.data("client-name-field"),
+        //     "client-email-field": form.data("client-email-field"),
+        //     title: form.data("title"),
+        // };
 
-        form.find(".form-field").each(function () {
-            var field = $.martanianOakHouseIsFormFieldValid($(this));
+        // form.find(".form-field").each(function () {
+        //     var field = $.martanianOakHouseIsFormFieldValid($(this));
 
-            if (field !== false) fields[fields.length] = field;
-            else isError = true;
-        });
+        //     if (field !== false) fields[fields.length] = field;
+        //     else isError = true;
+        // });
 
         if (isError == false) {
             var thanksLay = form.children(".thanks-lay");
@@ -1208,7 +1208,7 @@ $(document).ready(function () {
             console.log(formOptions);
 
             $.ajax({
-                url: "_assets/_php/submit.php",
+                url: "_assets/_php/test.php",
                 data: { fields: fields, options: formOptions },
                 type: "post",
                 success: function (output) {

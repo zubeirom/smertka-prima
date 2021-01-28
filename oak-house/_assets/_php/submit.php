@@ -54,6 +54,7 @@
                "Content-type: text/html; charset=utf-8\n".
                "Content-Transfer-Encoding: 8bit\n".
                "From: ". OWNER_NAME ." <". DO_NOT_REPLY_EMAIL .">\n".
+               "Reply-to: ". $reply['name'] ." <". $reply['email'] .">\n".
                "Date: ". date( "r" ). "\n";
 
    /**
@@ -93,10 +94,11 @@
     # sending an email
     $resultHTML = mail(
         OWNER_EMAIL,
-        $_POST['options']['title'],
+        "=?UTF-8?B?". base64_encode( $_POST['options']['title'] ) ."?=",
         $content,
         $headers
     );
+
 
     # if the email wasn't send
     if( $resultHTML == false ) {
