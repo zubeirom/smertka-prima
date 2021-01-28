@@ -10,13 +10,13 @@
     */
 
     # put your name here
-    define( 'OWNER_NAME', 'Zubeir' );
+    define( 'OWNER_NAME', 'Neue Nachricht!' );
 
     # put your email address here
-    define( 'OWNER_EMAIL', 'zubeir.mohamed@outlook.de' );
+    define( 'OWNER_EMAIL', 'zubeir.mohamed@outlook.de' ); # info@pflegedienst-prima.com
 
-    # put your do-not-reply email address here
-    define( 'DO_NOT_REPLY_EMAIL', 'zubeirtech@gmail.com' );
+    # put your  email address here that sents it
+    define( 'DO_NOT_REPLY_EMAIL', 'zubeirtech@gmail.com' ); # nicht-antworten@pflegedienst-prima.com
 
    /**
     *
