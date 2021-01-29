@@ -1356,7 +1356,7 @@ $(document).ready(function () {
         var headerMenu = headerBar.find("ul.menu");
         var headerTopBar = headerBar.find(".header-bar-top");
 
-        martanianOakHouseResponsiveMenuVisible = false;
+        martanianOakHouseResponsiveMenuVisible = true;
 
         headerBar.css({ left: "0" });
         $(".big-wrapper").css({ "margin-left": "", width: "" });
@@ -1409,7 +1409,7 @@ $(document).ready(function () {
         "click touchstart",
         ".responsive-menu-button",
         function (event) {
-            event.preventDefault();
+            //event.preventDefault();
 
             var contentSize = parseInt(
                 $("header.header-bar .container").css("width"),
